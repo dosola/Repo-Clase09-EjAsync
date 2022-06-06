@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript Asincrónicos Clase 09 - LPPA</title>
+</head>
+<br>
+<h1>Ej. 2-B</h1>
+<p>Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo
+  string con los primeros 5 caracteres guardando el resultado en una nueva
+  variable (utilizar substring).</p>
+<p><input id="textoentrada"></p>  
+<button type="button" onclick="subs5char()">validar</button></p>
+<p id="salida">...</p>
+
+
+<script> 
+function subs5char(){
+var a,b;
+a = document.getElementById("textoentrada").value;
+b = a.substring(0, 5);
+document.getElementById("salida").innerHTML = b;
+}
+</script> 
+
+
+</body>  
+</html>  

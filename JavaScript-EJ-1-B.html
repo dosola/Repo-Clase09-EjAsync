@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript Asincrónicos Clase 09 - LPPA</title>
+</head>
+<br>
+
+<h1>Ej. 1-B</h1>
+
+    <p> Crear dos variables de tipo String y concatenarlas guardando el resultado en una
+    3er variable.</p>
+
+    <p><input id="var1"></p>  
+    <p><input id="var2">
+    <button type="button" onclick="concatenardosvariables()">Concatenar</button></p>
+    <p><strong>Texto concatenado:</strong><p id="text">...</p>
+
+
+
+
+<script> 
+                     //Funcion ej 1-B (Concatenación de 2 variables string)
+        function concatenardosvariables() {  
+          var a,b,c;  
+          a = document.getElementById("var1").value;  
+          b = document.getElementById("var2").value;  
+          c = a+b; 
+          document.getElementById("text").innerHTML = c;  
+        }
+        </script> 
+  
+        </body>  
+        </html>  
+
+
+
+
+
+
+

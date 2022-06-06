@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript Asincrónicos Clase 09 - LPPA</title>
+</head>
+<br>
+<h1>Ej. 2-A</h1>
+<p>a. Crear una variable de tipo string con al menos 10 caracteres y convertir todo el
+  texto en mayúscula (utilizar toUpperCase).</p>
+    <br>
+
+<p><input id="textoentrada"></p>  
+<button type="button" onclick="validaryconvertir()">validar</button></p>
+<p><strong>Conversión a mayúsculas: </strong><p id="salida">...</p>
+
+
+
+
+<script> 
+function validaryconvertir(){
+var a,b;
+a = document.getElementById("textoentrada").value;
+if ( a.length >= 10) {
+b = a.toUpperCase();
+document.getElementById("salida").innerHTML = b; 
+}
+else { 
+alert("Debe ingresar al menos 10 caracteres... Ud. ingresó "+a.length);
+}
+}
+</script> 
+
+</body>  
+
+</html>  

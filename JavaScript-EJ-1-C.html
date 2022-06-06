@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript Asincrónicos Clase 09 - LPPA</title>
+</head>
+<br>
+
+<h1>Ej. 1-C</h1>
+
+    <p> Crear dos variables de tipo String y sumar el largo de cada variable (cantidad de
+      letras del string) guardando el resultado de la suma en una 3er variable (utilizar
+      length).</p>
+
+    <p><input id="cant1"></p>  
+    <p><input id="cant2">
+    <button type="button" onclick="concatenarysumar()">Concatenar</button></p>
+    <p><strong>Conteo:</strong><p id="conteo">...</p>
+
+
+
+
+<script> 
+                     //Funcion ej 1-B (Concatenación de 2 variables string)
+        function concatenarysumar() {  
+          var a,b,c;  
+          a = document.getElementById("cant1").value;  
+          b = document.getElementById("cant2").value;  
+          c = a.length + b.length; 
+          document.getElementById("conteo").innerHTML = c;  
+        }
+        </script> 
+  
+        </body>  
+        </html>  
+
+
+
+
+
+
+

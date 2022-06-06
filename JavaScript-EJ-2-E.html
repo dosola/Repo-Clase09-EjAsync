@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript Asincrónicos Clase 09 - LPPA</title>
+</head>
+<br>
+<h1>Ej. 2-E</h1>
+<p>
+
+  Crear una variable de tipo string con al menos 10 caracteres y algún espacio en
+blanco. Encontrar la posición del primer espacio en blanco y guardarla en una
+variable (utilizar indexOf).
+
+</p>
+<p><input id="textoentrada"></p>  
+<button type="button" onclick="buscarespacio()">validar</button></p>
+<h1 id="salida">...</h1>
+
+
+<script> 
+function buscarespacio(){
+var input,a,b;
+input = document.getElementById("textoentrada").value;
+if ( input.length >= 10) {
+indice = input.indexOf(" ",0);
+document.getElementById("salida").innerHTML = indice;
+}
+else { 
+alert("Debe ingresar al menos 10 caracteres... Ud. ingresó " + input.length);
+}
+}
+
+</script> 
+
+</body>  
+</html>  

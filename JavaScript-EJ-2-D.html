@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript Asincrónicos Clase 09 - LPPA</title>
+</head>
+<br>
+<h1>Ej. 2-D</h1>
+<p>Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo
+  string con la primera letra en mayúscula y las demás en minúscula. Guardar el
+  resultado en una nueva variable (utilizar substring, toUpperCase, toLowerCase y
+  el operador +).</p>
+<p><input id="textoentrada"></p>  
+<button type="button" onclick="mayusminus()">validar</button></p>
+<h1 id="salida">...</h1>
+
+
+<script> 
+function mayusminus(){
+var input,a,b;
+input = document.getElementById("textoentrada").value;
+if ( input.length >= 10) {
+a = input.substring(0, 1).toUpperCase();
+b = input.substring(1, input.length).toLowerCase();
+resultado = a + b;
+document.getElementById("salida").innerHTML = resultado;
+}
+else { 
+alert("Debe ingresar al menos 10 caracteres... Ud. ingresó " + input.length);
+}
+}
+
+</script> 
+
+</body>  
+</html>  

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript Asincrónicos Clase 09 - LPPA</title>
+</head>
+<br>
+<h1>Ej. 4-A - If - Else</h1>
+<p>
+  a. Crear un número aleatorio entre 0 y 1 utilizando la función Math.random(), si el
+valor es mayor o igual que 0,5 mostrar una alerta con el mensaje “Greater than
+0,5” y sino un alerta con el mensaje “Lower than 0,5”.
+</p>
+<button type="button" onclick="FN4()">Ejecutar</button></p>
+
+<script> 
+function FN4(){
+let aleatorio = Math.random(0,1);
+if (aleatorio >= 0.5){
+  alert("El número aleatorio es MAYOR que 0,5" + "(" + aleatorio +")");
+} else {
+  alert("El número aleatorio es MEONR que 0,5" + "(" + aleatorio +")");
+}
+
+}
+</script> 
+
+</body>  
+</html>  

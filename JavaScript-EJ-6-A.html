@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript Asincrónicos Clase 09 - LPPA</title>
+</head>
+<br>
+<h1>Ej. 5-A - Functions</h1>
+<p>
+  a. Crear una función suma que reciba dos valores numéricos y retorne el resultado.
+Ejecutar la función y guardar el resultado en una variable, mostrando el valor de
+dicha variable en la consola del navegador.
+</p>
+
+<p><input id="num1"></p>  
+ <p><input id="num2">
+ <button type="button1" onclick="suma()">Sumar</button></p>
+
+ 
+
+
+
+
+<script> 
+function suma(){
+var n1,n2,resultado;
+n1 = document.getElementById("num1").value;  
+n2 = document.getElementById("num2").value;  
+resultado = parseFloat(n1)+parseFloat(n2);
+console.log(" El resultado de la suma es: " + resultado );
+}
+
+</script> 
+
+</body>  
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript Asincrónicos Clase 09 - LPPA</title>
+</head>
+<br>
+<h1>Ej. 5-B - for</h1>
+<p>
+  B. Al array anterior convertir la primera letra de cada palabra en mayúscula y
+  mostrar una alerta por cada palabra modificada.
+</p>
+<button type="button" onclick="modificarvaloresarray()">Ejecutar</button></p>
+
+<script> 
+function modificarvaloresarray(){
+  var a,b,input,resultado;
+let partes = ["motor", "rueda", "butaca", "luces", "puertas"]
+for(var i = 0; i<=4; i++) {
+input = partes[i].value;
+a = input.substring(0, 1).toUpperCase();
+b = input.substring(1, input.length).toLowerCase();
+resultado = a + b;
+console.log(resultado);
+}
+}
+
+
+
+
+</script> 
+
+</body>  
+</html>
