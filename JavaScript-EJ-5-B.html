@@ -16,10 +16,10 @@
 
 <script> 
 function modificarvaloresarray(){
-  var a,b,input,resultado;
+var a,b,input,resultado;
 let partes = ["motor", "rueda", "butaca", "luces", "puertas"]
 for(var i = 0; i<=4; i++) {
-input = partes[i].value;
+input = partes[i];
 a = input.substring(0, 1).toUpperCase();
 b = input.substring(1, input.length).toLowerCase();
 resultado = a + b;

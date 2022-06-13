@@ -7,30 +7,33 @@
     <title>Ejercicios JavaScript Asincrónicos Clase 09 - LPPA</title>
 </head>
 <br>
-<h1>Ej. 5-C - Functions</h1>
+<h1>Ej. 6-C - Functions</h1>
 <p>
   C.  Crear una función validate integer que reciba un número como parámetro y
   devuelva verdadero si es un número entero.
 </p>
 
 <p><input id="num1"></p>  
- <button type="button1" onclick="validate()">validar</button></p>
+ <button type="button1" onclick="validateINT()">validar</button></p>
 
  
 
 <script> 
-function validate(){
-  var n1;
-  n1 = document.getElementById("num1").value;
-  //n1 = parseInt(n1);
-  if (isNaN(n1)) {
+function validateINT(){
+  var n1 = document.getElementById("num1").value;
+  if ( n1 == "") { 
     alert("False");
   } else {
-    alert("True");
+  if ( n1 %1 == 0 ) 
+  {
+  alert("True"); 
+}
+  else 
+  { 
+  alert("False");
   }
 }
-
-
+}
 </script> 
 
 </body>  

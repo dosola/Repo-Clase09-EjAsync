@@ -5,59 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios JavaScript Asincrónicos Clase 09 - LPPA</title>
+   
 </head>
+
+
+<body>
 <br>
 <h1>Ej. 1-A</h1>
 <p>a. Crear dos variables numéricas y utilizar el operador suma para guardar el valor
     de la suma de ambos números en una 3er variable.</p>
     <br>
 
-<p><input id="num1"></p>  
+ <p><input id="num1"></p>  
  <p><input id="num2">
  <button type="button1" onclick="sumardosnumeros()">Sumar</button></p>
- <p><strong>Resultado: </strong><p id="sumando">...</p>
+ <p id="res">...</p>
 
 
+<script>
+    function sumardosnumeros() {
+        var n1 = document.getElementById("num1").value;
+        var n2 = document.getElementById("num2").value;
+        var resultado = parseFloat(n1) + parseFloat(n2);
+        document.getElementById("res").innerHTML = resultado;  
+        //alert("El resultado es: " + resultado);
+    }
+</script>
 
 
-
-<script>  
-                  //Funcion ej 1-A  (Suma de 2 nros float)
-        function sumardosnumeros() {  
-          var x,y,suma,text;  
-          x = document.getElementById("num1").value;  
-          y = document.getElementById("num2").value;  
-          suma=parseFloat(x)+parseFloat(y);  
-          RESULT= suma;  
-          document.getElementById("sumando").innerHTML = RESULT;  
-        }  
-</script> 
-
-
-
-<script> 
-                     //Funcion ej 1-B (Concatenación de 2 variables string)
-        function concatenardosvariables() {  
-          var a,b,c;  
-          a = document.getElementById("var1").value;  
-          b = document.getElementById("var2").value;  
-          c = a+b; 
-          document.getElementById("concatenado").innerHTML = c;  
-        }
-        </script> 
-
-
-<script> 
-
-        //Funcion ej 1-C (Concatenación de 2 variables y sumar cantidad de chars)
-        function concatenardosvariables() {  
-          var a,b,concatenado,text;  
-          a = document.getElementById("var1").value;  
-          b = document.getElementById("var2").value;  
-          concatenado = a+b; 
-          document.getElementById("sumando").innerHTML = concatenado;  
-        }
-        </script>  
         </body>  
         </html>  
 

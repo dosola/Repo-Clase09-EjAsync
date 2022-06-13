@@ -20,6 +20,10 @@
 function subs5char(){
 var a,b;
 a = document.getElementById("textoentrada").value;
+if ( a.length < 5 ) {
+  alert("Debe ingresar al menos 5 caracteres. Ud ingresó " + a.length)
+  return false;
+}
 b = a.substring(0, 5);
 document.getElementById("salida").innerHTML = b;
 }
